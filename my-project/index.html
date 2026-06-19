@@ -3,51 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shamitha Shetty Portfolio</title>
+<title>Shamitha Shetty | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
 background:#0f172a;
 color:white;
-line-height:1.6;
+overflow-x:hidden;
 }
 
-header{
-background:linear-gradient(135deg,#0ea5e9,#2563eb);
-padding:80px 20px;
-text-align:center;
+/* Navbar */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(15px);
+z-index:1000;
 }
 
-header h1{
-font-size:50px;
-}
-
-header h2{
-margin-top:10px;
-font-weight:normal;
-}
-
-section{
-padding:50px 10%;
-}
-
-h2{
+.logo{
+font-size:28px;
+font-weight:700;
 color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero h2{
+font-weight:400;
 margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+color:#cbd5e1;
+line-height:1.8;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:10px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid #38bdf8;
+}
+
+/* Sections */
+section{
+padding:100px 8%;
+}
+
+.title{
+font-size:2.5rem;
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
-border-radius:10px;
+padding:25px;
+border-radius:15px;
 margin-bottom:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:10px;
 }
 
 ul{
@@ -58,75 +161,132 @@ li{
 margin-bottom:8px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
+/* Contact */
+.contact-buttons{
+text-align:center;
 }
 
+.contact-buttons a{
+margin:10px;
+}
+
+/* Footer */
 footer{
-text-align:center;
-padding:20px;
 background:#020617;
+padding:30px;
+text-align:center;
+margin-top:50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+nav ul{
+display:none;
+}
+
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Shamitha Shetty P</h1>
+<nav>
+<div class="logo">Shamitha</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h1>Shamitha <span>Shetty P</span></h1>
+
 <h2>QC Executive | Microbiologist | Quality Professional</h2>
 
 <p>
-Experienced in Quality Control, Microbiological Testing,
-Food Safety Systems, Laboratory Analysis and GMP Compliance.
+Experienced QC Executive specializing in quality control,
+microbiological testing, laboratory analysis, food safety systems,
+GMP compliance and quality assurance in dairy and ice cream manufacturing.
 </p>
-</header>
 
-<section>
-<h2>Personal Details</h2>
+<div class="buttons">
+<a href="#contact" class="btn">Contact Me</a>
+<a href="#" class="btn btn-outline">Download Resume</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">Career Objective</h2>
 
 <div class="card">
-<p><b>Full Name:</b> Shamitha Shetty P</p>
-<p><b>Date of Birth:</b> 04/11/2000</p>
-<p><b>Nationality:</b> Indian</p>
-<p><b>Gender:</b> Female</p>
 
 <p>
-<b>Address:</b><br>
+A motivated QC Executive and quality professional with experience in the food production industry,
+particularly in dairy and ice cream manufacturing. Skilled in quality monitoring, product inspection,
+maintaining accurate test records, laboratory testing and documentation. Focused on maintaining
+high product safety standards and seeking opportunities in growth-oriented organizations where
+technical knowledge and quality expertise can be effectively utilized.
+</p>
+
+</div>
+
+</section>
+
+<!-- PERSONAL DETAILS -->
+
+<section>
+
+<h2 class="title">Personal Details</h2>
+
+<div class="card">
+
+<p><strong>Full Name:</strong> Shamitha Shetty P</p>
+<p><strong>Date of Birth:</strong> 04/11/2000</p>
+<p><strong>Nationality:</strong> Indian</p>
+<p><strong>Gender:</strong> Female</p>
+
+<p>
+<strong>Address:</strong><br>
 Yashassu Nilaya (Puddottu House)<br>
 Yedamangala Post and Village<br>
 Kadaba Taluk - 574221
 </p>
+
 </div>
+
 </section>
 
-<section>
-<h2>Career Objective</h2>
+<!-- EXPERIENCE -->
 
-<div class="card">
-<p>
-A motivated QC Executive and quality professional with experience in the food production industry,
-particularly in dairy and ice cream manufacturing. Skilled in quality monitoring, product inspection,
-maintaining accurate test records, laboratory testing and documentation.
-Focused on maintaining high product safety standards and seeking opportunities
-in growth-oriented organizations where technical knowledge and quality expertise
-can be effectively utilized.
-</p>
-</div>
-</section>
+<section id="experience">
 
-<section>
-<h2>Professional Experience</h2>
+<h2 class="title">Professional Experience</h2>
 
 <div class="card">
 
 <h3>QC Executive</h3>
 
-<p>
-Hangyo Ice Creams Pvt. Ltd., Heroor, India
-</p>
+<p><strong>Hangyo Ice Creams Pvt. Ltd., Heroor, India</strong></p>
 
 <ul>
 <li>Conduct Internal FSMS audits and maintain audit documentation.</li>
@@ -135,16 +295,20 @@ Hangyo Ice Creams Pvt. Ltd., Heroor, India
 <li>Perform laboratory testing and microbiological checks.</li>
 <li>Ensure calibration of quality control instruments.</li>
 <li>Maintain QC records and documentation for compliance.</li>
-<li>Ensure safety, hygiene and GMP practices.</li>
+<li>Ensure safety, hygiene and GMP practices in production areas.</li>
 <li>Provide staff training on quality and hygiene requirements.</li>
 <li>Support continuous improvement initiatives and process monitoring.</li>
 </ul>
 
 </div>
+
 </section>
 
-<section>
-<h2>Education</h2>
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="title">Education</h2>
 
 <div class="grid">
 
@@ -173,12 +337,19 @@ Hangyo Ice Creams Pvt. Ltd., Heroor, India
 </div>
 
 </div>
+
 </section>
 
-<section>
-<h2>Professional Skills</h2>
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="grid">
 
 <div class="card">
+<h3>Professional Skills</h3>
 <ul>
 <li>Quick Learner</li>
 <li>Collaborator</li>
@@ -188,12 +359,9 @@ Hangyo Ice Creams Pvt. Ltd., Heroor, India
 <li>Laboratory Skills</li>
 </ul>
 </div>
-</section>
-
-<section>
-<h2>Technical Skills</h2>
 
 <div class="card">
+<h3>Technical Skills</h3>
 <ul>
 <li>Quality Control Testing and Sample Analysis</li>
 <li>Titration and Sample Preparation</li>
@@ -204,12 +372,9 @@ Hangyo Ice Creams Pvt. Ltd., Heroor, India
 <li>Record Keeping and Documentation Control</li>
 </ul>
 </div>
-</section>
-
-<section>
-<h2>Computer Skills</h2>
 
 <div class="card">
+<h3>Computer Skills</h3>
 <ul>
 <li>MS Excel</li>
 <li>MS Word</li>
@@ -217,10 +382,16 @@ Hangyo Ice Creams Pvt. Ltd., Heroor, India
 <li>SAP (Basic Exposure)</li>
 </ul>
 </div>
+
+</div>
+
 </section>
 
+<!-- PROJECT -->
+
 <section>
-<h2>Research Project</h2>
+
+<h2 class="title">Research Project</h2>
 
 <div class="card">
 
@@ -229,32 +400,37 @@ Comparative Study of Fruit Waste Compost and Parthenium hysterophorus Weed Waste
 </h3>
 
 <p>
-Comparative study of fruit waste compost and Parthenium hysterophorus weed waste compost
-as vermiculture of Eudrilus eugeniae and efficacy of vermicompost application on vegetable crops
-as an approach to market waste management and weed management.
+Comparative study of fruit waste compost and Parthenium hysterophorus weed waste compost as vermiculture of Eudrilus eugeniae and efficacy of vermicompost as an application on vegetable crops – an approach to market waste management and weed management.
 </p>
 
 </div>
+
 </section>
 
+<!-- TRAINING -->
+
 <section>
-<h2>Training</h2>
+
+<h2 class="title">Training & Certification</h2>
 
 <div class="card">
-<p>FSSC 22000 Version 6 Internal Auditor Training</p>
+<h3>FSSC 22000 Version 6 Internal Auditor Training</h3>
 </div>
+
 </section>
 
+<!-- INTERNSHIP -->
+
 <section>
-<h2>Internships & Activities</h2>
+
+<h2 class="title">Internships & Activities</h2>
 
 <div class="card">
 
 <h3>Sri Jayachamarajendra Taluk Hospital, Thirthahalli</h3>
 
 <p>
-Laboratory Internship
-(30/09/2021 – 05/10/2021)
+Laboratory Internship (30/09/2021 – 05/10/2021)
 </p>
 
 </div>
@@ -263,17 +439,15 @@ Laboratory Internship
 
 <h3>Bangalore Analytical Research Centre</h3>
 
-<p>
-Intern | Nov 2024 – Jan 2025
-</p>
+<p>Intern | Nov 2024 – Jan 2025</p>
 
 <ul>
 <li>Worked across food, pharmaceutical, water and air quality testing departments.</li>
-<li>Operated HPLC.</li>
+<li>Operated High Performance Liquid Chromatography (HPLC).</li>
 <li>Operated FTIR analytical instruments.</li>
 <li>Performed disintegration testing.</li>
 <li>Performed dissolution testing.</li>
-<li>Performed Karl Fischer titration.</li>
+<li>Performed Karl Fischer titration for water content determination.</li>
 <li>Developed industry-standard quality control skills.</li>
 <li>Strengthened technical and analytical laboratory expertise.</li>
 <li>Improved understanding of regulated laboratory environments.</li>
@@ -283,58 +457,72 @@ Intern | Nov 2024 – Jan 2025
 
 </section>
 
+<!-- LANGUAGES -->
+
 <section>
-<h2>Languages</h2>
+
+<h2 class="title">Languages</h2>
 
 <div class="card">
-<ul>
-<li>English</li>
-<li>Kannada</li>
-<li>Hindi</li>
-<li>Tulu</li>
-</ul>
+English • Kannada • Hindi • Tulu
 </div>
+
 </section>
 
+<!-- HOBBIES -->
+
 <section>
-<h2>Hobbies</h2>
+
+<h2 class="title">Hobbies</h2>
 
 <div class="card">
-<ul>
-<li>Art</li>
-<li>Dance</li>
-</ul>
+Art • Dance
 </div>
+
 </section>
 
-<section>
-<h2>Contact Information</h2>
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">Contact Information</h2>
 
 <div class="card">
 
-<p><b>Email:</b> shettyshamithap4@gmail.com</p>
-
-<p><b>Phone:</b> 7624821565</p>
-
-<p>
-<b>LinkedIn:</b>
-<a href="https://www.linkedin.com/in/shamitha-shetty-microbiologist" style="color:#38bdf8;">
-View LinkedIn Profile
-</a>
-</p>
+<p><strong>Email:</strong> shettyshamithap4@gmail.com</p>
+<p><strong>Phone:</strong> 7624821565</p>
 
 <p>
-<b>Address:</b>
+<strong>Address:</strong><br>
 Yashassu Nilaya (Puddottu House),
 Yedamangala Post and Village,
 Kadaba Taluk - 574221
 </p>
 
+<div class="contact-buttons">
+
+<a href="mailto:shettyshamithap4@gmail.com" class="btn">
+Email Me
+</a>
+
+<a href="tel:+917624821565" class="btn">
+Call Me
+</a>
+
+<a href="https://www.linkedin.com" target="_blank" class="btn">
+LinkedIn
+</a>
+
 </div>
+
+</div>
+
 </section>
 
 <footer>
-© 2026 Shamitha Shetty Portfolio
+<h3>Shamitha Shetty P</h3>
+<p>QC Executive | Microbiologist | Quality Professional</p>
+<p>© 2026 All Rights Reserved</p>
 </footer>
 
 </body>
