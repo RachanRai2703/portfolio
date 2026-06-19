@@ -1,257 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shamitha Shetty | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:white;
-line-height:1.7;
-}
-
-/* Navbar */
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:rgba(15,23,42,.9);
-backdrop-filter:blur(15px);
-z-index:1000;
-}
-
-.logo{
-font-size:28px;
-font-weight:700;
-color:#38bdf8;
-}
-
-nav ul{
-display:flex;
-gap:25px;
-list-style:none;
-}
-
-nav a{
-text-decoration:none;
-color:white;
-transition:.3s;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-/* Hero */
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 10%;
-background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
-}
-
-.hero-content{
-max-width:900px;
-}
-
-.hero h1{
-font-size:4rem;
-margin-bottom:15px;
-}
-
-.hero span{
-color:#38bdf8;
-}
-
-.hero p{
-font-size:1.2rem;
-color:#cbd5e1;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#38bdf8;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:600;
-}
-
-/* Sections */
-
-section{
-padding:100px 10%;
-}
-
-.section-title{
-text-align:center;
-font-size:2.8rem;
-margin-bottom:50px;
-color:#38bdf8;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-margin-bottom:25px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:#38bdf8;
-margin-bottom:10px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:8px;
-}
-
-.timeline{
-border-left:4px solid #38bdf8;
-padding-left:30px;
-}
-
-.timeline-item{
-margin-bottom:40px;
-}
-
-.timeline-item h3{
-color:#38bdf8;
-}
-
-footer{
-background:#020617;
-text-align:center;
-padding:30px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2.8rem;
-}
-
-nav ul{
-display:none;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<nav>
-<div class="logo">Shamitha</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#project">Project</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Shamitha <span>Shetty P</span></h1>
-
-<p>
-QC Executive | Microbiologist | Quality Professional
-</p>
-
-<p style="margin-top:20px;">
-Experienced in dairy and ice cream manufacturing,
-quality control testing, microbiological analysis,
-food safety systems, GMP compliance and laboratory operations.
-</p>
-
-<a href="#" class="btn">Download Resume</a>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="card">
-
-<p>
-A motivated QC Executive and quality professional with experience in the food production
-industry, particularly in dairy and ice cream manufacturing. Skilled in quality monitoring,
-product inspection, laboratory testing, microbiological analysis and documentation control.
-Focused on maintaining high product safety standards and seeking opportunities in a
-growth-oriented organization where technical knowledge can be effectively utilized.
-</p>
-
-</div>
-
-</section>
-
 <!-- PERSONAL DETAILS -->
 
-<section>
+<section id="personal">
 
-<h2 class="section-title">Personal Details</h2>
+<h2>Personal Details</h2>
 
 <div class="card">
 
-<p><strong>Date of Birth:</strong> 04 November 2000</p>
+<p><strong>Full Name:</strong> Shamitha Shetty P</p>
+
+<p><strong>Date of Birth:</strong> 04/11/2000</p>
+
 <p><strong>Nationality:</strong> Indian</p>
+
 <p><strong>Gender:</strong> Female</p>
+
+<p><strong>Address:</strong><br>
+Yashassu Nilaya (Puddottu House)<br>
+Yedamangala Post and Village<br>
+Kadaba Taluk - 574221
+</p>
+
+</div>
+
+</section>
+
+<!-- OBJECTIVE -->
+
+<section id="objective">
+
+<h2>Career Objective</h2>
+
+<div class="card">
+
+<p>
+A motivated QC Executive and quality professional with experience in the food production industry,
+particularly in dairy and ice cream manufacturing. Skilled in quality monitoring, product inspection,
+maintaining accurate test records, laboratory testing and documentation. Focused on maintaining
+high product safety standards and seeking opportunities in growth-oriented organizations where
+technical knowledge and quality expertise can be effectively utilized.
+</p>
 
 </div>
 
@@ -261,11 +48,9 @@ growth-oriented organization where technical knowledge can be effectively utiliz
 
 <section id="experience">
 
-<h2 class="section-title">Professional Experience</h2>
+<h2>Professional Experience</h2>
 
-<div class="timeline">
-
-<div class="timeline-item">
+<div class="card">
 
 <h3>QC Executive</h3>
 
@@ -295,71 +80,85 @@ growth-oriented organization where technical knowledge can be effectively utiliz
 
 </div>
 
-</div>
-
 </section>
 
 <!-- EDUCATION -->
 
 <section id="education">
 
-<h2 class="section-title">Education</h2>
-
-<div class="grid">
+<h2>Education</h2>
 
 <div class="card">
-<h3>M.Sc Microbiology</h3>
+
+<h3>Master of Science (Microbiology)</h3>
+
 <p>MS Ramaiah College of Arts, Science and Commerce</p>
+
 <p>CGPA: 6.91</p>
+
 </div>
 
 <div class="card">
+
 <h3>Bachelor of Science</h3>
+
 <p>Alvas Degree College, Moodbidri</p>
-<p>Percentage: 72.94%</p>
+
+<p>72.94%</p>
+
 </div>
 
 <div class="card">
+
 <h3>PUC</h3>
+
 <p>Vivekananda Pre University College, Puttur</p>
-<p>Percentage: 66.3%</p>
+
+<p>66.3%</p>
+
 </div>
 
 <div class="card">
+
 <h3>SSLC</h3>
+
 <p>Pragathi English Medium School, Kaniyoor</p>
-<p>Percentage: 80.64%</p>
-</div>
+
+<p>80.64%</p>
 
 </div>
 
 </section>
 
-<!-- SOFT SKILLS -->
+<!-- PROFESSIONAL SKILLS -->
 
 <section id="skills">
 
-<h2 class="section-title">Professional Skills</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Soft Skills</h3>
+<h2>Professional Skills</h2>
 
 <ul>
+
 <li>Quick Learner</li>
+
 <li>Collaborator</li>
+
 <li>Adaptability</li>
+
 <li>Time Management</li>
+
 <li>Decision Making</li>
+
 <li>Laboratory Skills</li>
+
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+<!-- TECHNICAL SKILLS -->
 
-<h3>Technical Skills</h3>
+<section id="technical">
+
+<h2>Technical Skills</h2>
 
 <ul>
 
@@ -379,11 +178,13 @@ growth-oriented organization where technical knowledge can be effectively utiliz
 
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+<!-- COMPUTER SKILLS -->
 
-<h3>Computer Skills</h3>
+<section id="computer">
+
+<h2>Computer Skills</h2>
 
 <ul>
 
@@ -397,30 +198,24 @@ growth-oriented organization where technical knowledge can be effectively utiliz
 
 </ul>
 
-</div>
-
-</div>
-
 </section>
 
-<!-- PROJECT -->
+<!-- RESEARCH PROJECT -->
 
 <section id="project">
 
-<h2 class="section-title">Research Project</h2>
+<h2>Research Project</h2>
 
 <div class="card">
 
 <h3>
-Comparative Study of Fruit Waste Compost and Parthenium Weed Waste Compost
+Comparative Study of Fruit Waste Compost and Parthenium hysterophorus Weed Waste Compost
 </h3>
 
 <p>
-
-Comparative study of fruit waste compost and Parthenium hysterophorus weed waste
-compost as vermiculture of Eudrilus eugeniae and efficacy of vermicompost application
-on vegetable crops as an approach to market waste management and weed management.
-
+Comparative study of fruit waste compost and Parthenium hysterophorus weed waste compost
+as vermiculture of Eudrilus eugeniae and efficacy of vermicompost as an application on
+vegetable crops – an approach to market waste management and weed management.
 </p>
 
 </div>
@@ -429,35 +224,31 @@ on vegetable crops as an approach to market waste management and weed management
 
 <!-- TRAINING -->
 
-<section>
+<section id="training">
 
-<h2 class="section-title">Training</h2>
+<h2>Training</h2>
 
 <div class="card">
 
-<h3>FSSC 22000 V6 Internal Auditor</h3>
-
-<p>
-Completed professional training on Food Safety System Certification
-(FSSC 22000 Version 6) Internal Auditor.
-</p>
+<h3>FSSC 22000 Version 6 Internal Auditor Training</h3>
 
 </div>
 
 </section>
 
-<!-- INTERNSHIP -->
+<!-- INTERNSHIPS -->
 
-<section>
+<section id="internships">
 
-<h2 class="section-title">Internships & Activities</h2>
+<h2>Internships & Activities</h2>
 
 <div class="card">
 
-<h3>Sri Jayachamarajendra Taluk Hospital</h3>
+<h3>Sri Jayachamarajendra Taluk Hospital, Thirthahalli</h3>
 
 <p>
-Completed laboratory internship from 30/09/2021 to 05/10/2021.
+Laboratory Internship
+(30/09/2021 – 05/10/2021)
 </p>
 
 </div>
@@ -466,21 +257,29 @@ Completed laboratory internship from 30/09/2021 to 05/10/2021.
 
 <h3>Bangalore Analytical Research Centre</h3>
 
-<p><strong>Nov 2024 – Jan 2025</strong></p>
+<p>
+Intern | Nov 2024 – Jan 2025
+</p>
 
 <ul>
 
-<li>Worked across food, pharmaceutical, water and air testing departments.</li>
+<li>Worked across food, pharmaceutical, water and air quality testing departments.</li>
 
-<li>Operated HPLC and FTIR analytical instruments.</li>
+<li>Operated High Performance Liquid Chromatography (HPLC).</li>
 
-<li>Performed pharmaceutical quality tests including disintegration and dissolution.</li>
+<li>Operated FTIR analytical instruments.</li>
+
+<li>Performed disintegration testing.</li>
+
+<li>Performed dissolution testing.</li>
 
 <li>Performed Karl Fischer titration for water content determination.</li>
 
-<li>Developed proficiency in quality control protocols.</li>
+<li>Developed industry-standard quality control skills.</li>
 
-<li>Strengthened technical and analytical laboratory skills.</li>
+<li>Strengthened technical and analytical laboratory expertise.</li>
+
+<li>Improved understanding of regulated laboratory environments.</li>
 
 </ul>
 
@@ -490,37 +289,37 @@ Completed laboratory internship from 30/09/2021 to 05/10/2021.
 
 <!-- LANGUAGES -->
 
-<section>
+<section id="languages">
 
-<h2 class="section-title">Languages</h2>
-
-<div class="card">
+<h2>Languages</h2>
 
 <ul>
-<li>English</li>
-<li>Kannada</li>
-<li>Hindi</li>
-<li>Tulu</li>
-</ul>
 
-</div>
+<li>English</li>
+
+<li>Kannada</li>
+
+<li>Hindi</li>
+
+<li>Tulu</li>
+
+</ul>
 
 </section>
 
 <!-- HOBBIES -->
 
-<section>
+<section id="hobbies">
 
-<h2 class="section-title">Hobbies</h2>
-
-<div class="card">
+<h2>Hobbies</h2>
 
 <ul>
-<li>Art</li>
-<li>Dance</li>
-</ul>
 
-</div>
+<li>Art</li>
+
+<li>Dance</li>
+
+</ul>
 
 </section>
 
@@ -528,39 +327,24 @@ Completed laboratory internship from 30/09/2021 to 05/10/2021.
 
 <section id="contact">
 
-<h2 class="section-title">Contact Information</h2>
+<h2>Contact Information</h2>
 
-<div class="card">
+<p>Email: shettyshamithap4@gmail.com</p>
 
-<p><strong>Email:</strong> shettyshamithap4@gmail.com</p>
-
-<p><strong>Phone:</strong> 7624821565</p>
-
-<p><strong>LinkedIn:</strong></p>
+<p>Phone: 7624821565</p>
 
 <p>
-<a style="color:#38bdf8;"
-href="https://www.linkedin.com/in/shamitha-shetty-microbiologist">
-linkedin.com/in/shamitha-shetty-microbiologist
+LinkedIn:
+<a href="https://www.linkedin.com/in/shamitha-shetty-microbiologist" target="_blank">
+View LinkedIn Profile
 </a>
 </p>
 
 <p>
-<strong>Address:</strong><br>
-Yashassu Nilaya (Puddottu House)<br>
-Yedamangala Post and Village<br>
+Address:
+Yashassu Nilaya (Puddottu House),
+Yedamangala Post and Village,
 Kadaba Taluk - 574221
 </p>
 
-</div>
-
 </section>
-
-<footer>
-
-© 2026 Shamitha Shetty Portfolio
-
-</footer>
-
-</body>
-</html>
