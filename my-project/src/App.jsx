@@ -1,122 +1,161 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+```jsx
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
+    <div>
+
+      <nav>
+        <div className="logo">Shamitha</div>
+
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section className="hero">
+
+        <div className="hero-content">
+
+          <h1>Shamitha Shetty P</h1>
+
+          <h3>QC Executive • Microbiologist • Quality Professional</h3>
+
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Experienced QC Executive specializing in quality control,
+            microbiological testing, food safety systems, laboratory analysis
+            and GMP compliance.
+          </p>
+
+          <div className="hero-buttons">
+            <a href="#contact" className="btn">Contact Me</a>
+            <a href="#" className="btn secondary">Download Resume</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="about">
+        <h2>Career Objective</h2>
+
+        <div className="card">
+          <p>
+            A motivated QC Executive and quality professional with experience
+            in dairy and ice cream manufacturing. Skilled in quality monitoring,
+            laboratory testing, documentation and food safety compliance.
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
-      <div className="ticks"></div>
+      <section id="experience">
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+        <h2>Professional Experience</h2>
+
+        <div className="card">
+
+          <h3>QC Executive</h3>
+
+          <p>Hangyo Ice Creams Pvt. Ltd., Heroor, India</p>
+
           <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+            <li>Conduct Internal FSMS audits.</li>
+            <li>Handle customer complaints.</li>
+            <li>Perform microbiological testing.</li>
+            <li>Maintain QC documentation.</li>
+            <li>Ensure GMP and hygiene compliance.</li>
           </ul>
+
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
+
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <section id="education">
+
+        <h2>Education</h2>
+
+        <div className="grid">
+
+          <div className="card">
+            <h3>M.Sc Microbiology</h3>
+            <p>CGPA: 6.91</p>
+          </div>
+
+          <div className="card">
+            <h3>Bachelor of Science</h3>
+            <p>72.94%</p>
+          </div>
+
+          <div className="card">
+            <h3>PUC</h3>
+            <p>66.3%</p>
+          </div>
+
+          <div className="card">
+            <h3>SSLC</h3>
+            <p>80.64%</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div className="grid">
+
+          <div className="card">Quality Control</div>
+          <div className="card">Microbiology</div>
+          <div className="card">Food Safety</div>
+          <div className="card">HPLC</div>
+          <div className="card">FTIR</div>
+          <div className="card">Documentation</div>
+
+        </div>
+
+      </section>
+
+      <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div className="card">
+
+          <p>Email: shettyshamithap4@gmail.com</p>
+
+          <p>Phone: 7624821565</p>
+
+          <div className="hero-buttons">
+
+            <a
+              href="mailto:shettyshamithap4@gmail.com"
+              className="btn"
+            >
+              Email
+            </a>
+
+            <a
+              href="tel:+917624821565"
+              className="btn"
+            >
+              Call
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
   )
 }
 
 export default App
+```
